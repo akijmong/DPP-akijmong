@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fce4d6, #f8c99d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sandwich {
+    width: 100%;
+    max-width: 450px;
+    background-color: #fffaf0;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(80, 45, 20, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #8b3e22;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    display: block;
+    background-color: #8b3e22;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-button:hover {
+    background-color: #a9522f;
+}
+
+.arrow {
+    float: right;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 18px;
+}
+
+#menu-toggle:checked ~ .dropdown {
+    display: block;
+}
+
+#menu-toggle:checked ~ .menu-button .arrow {
+    transform: rotate(180deg);
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 8px;
+    border-bottom: 1px solid #eadbc8;
+}
+
+.ingredient > span:first-child {
+    font-size: 28px;
+}
+
+.ingredient div {
+    flex: 1;
+}
+
+.ingredient strong {
+    color: #573321;
+}
+
+.ingredient p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.status {
+    color: #31834a;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #8b3e22;
+    font-size: 19px;
+}
+
+.note {
+    text-align: center;
+    color: #8b3e22;
+    font-weight: bold;
+    margin-bottom: 0;
+}
